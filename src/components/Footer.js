@@ -28,7 +28,7 @@ const Footer = () => {
         {/* Right Column: CV Download */}
         <div className="footer-column">
           <h4>Ojea mi CV:</h4>
-          <a href="/path-to-your-cv.pdf" download className="download-button">
+          <a href="./cv_federicofernandez_ingles.pdf" download className="download-button">
             Descargar
           </a>
         </div>
