@@ -1,0 +1,92 @@
+body {
+  font-family: "IBM Plex Mono";
+  font-weight: 500;
+}
+
+.technologies-section {
+  position: relative; /* Ensure positioning context for pseudo-elements */
+  padding: 0%;
+  text-align: center;
+  width: 95%;
+  margin-left: 2%;
+  padding-top: 1%;
+  padding-bottom: 4%;
+  margin-top: 3%;
+  border: 2px #ccc;
+}
+
+.technologies-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("../../public/images/background.png") repeat top left, linear-gradient(180deg, #07176c 0%, #091C84 100%);
+  background-attachment: fixed;
+  filter: blur(0.1rem); /* Apply the blur effect */
+  z-index: -1; /* Ensure it's behind the content */
+}
+
+.content {
+  position: relative; /* Ensure the content is on top of the background */
+  z-index: 1; /* Higher than the blurred background */
+}
+
+.technologies-table {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.technology-category {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.category-header {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: left;
+  margin-left: 25%;
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(4%, 1fr)); /* Ensures items fit within available space */
+  grid-gap: 8%; /* Reduces the space between rows and columns */
+  justify-items: center;
+  gap: 6rem;
+  align-items: center; /* Aligns items to the top of their cell */
+  padding: 0%;
+  margin-left: 35%;
+}
+
+.technology-item {
+  padding: 1rem; /* Adjusts internal padding of the items */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 80px; /* Square size */
+  height: 80px; /* Square size */
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 0; /* Ensure there’s no extra space below each item */
+}
+
+.technology-item img {
+  width: 50px;
+  height: 50px;
+}
+
+.technology-item p {
+  margin: 0;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+

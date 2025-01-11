@@ -1,0 +1,29 @@
+/* src/styles/Navbar.css */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: url('../../public/images/background.png') no-repeat center center;
+    background-repeat: repeat; /* Repeats the image horizontally and vertically */
+    background-size: auto; /* Keeps the image at its original size */
+    background-position: top left; /* Starts from the top-left corner */
+    display: flex; /* Enable flexbox on navbar */
+    justify-content: center; /* Horizontally center the navbar items */
+    align-items: center; /* Vertically center the navbar items */
+    padding: 5px 0;
+    z-index: 1000;
+  }
+  
+  .navbar a {
+    color: #590016;
+    text-decoration: none;
+    padding: 1px 1px;
+    font-size: 10px;
+    margin: 0 0px; /* Space between navbar items */
+    border: 2px solid transparent;
+  }
+  
+
+  
+  

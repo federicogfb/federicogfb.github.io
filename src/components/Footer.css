@@ -1,0 +1,65 @@
+.footer {
+    margin-top: 30px;
+    background-color: #560505;
+    color: white;
+    padding: 2rem;
+    padding-bottom: 4rem;
+    font-family: "IBM Plex Mono", monospace;
+  }
+  
+  .footer-columns {
+    display: flex;
+    justify-content: space-between; /* Distributes the columns evenly */
+    align-items: flex-start; /* Aligns columns at the top */
+    gap: 2rem;
+  }
+  
+  .footer-column {
+    flex: 1; /* Ensures equal width for all columns */
+    text-align: center;
+  }
+  
+  .footer-column h4 {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+  }
+  
+  .contact-info p {
+    margin: 0.5rem 0;
+    text-align: left;
+  }
+  
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .social-icon {
+    width: 32px;
+    height: 32px;
+    transition: transform 0.3s ease;
+  }
+  
+  .social-icon:hover {
+    transform: scale(1.2);
+  }
+  
+  .download-button {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: #ede8d0;
+    color: #560505;
+    text-decoration: none;
+    border: 2px solid #ede8d0;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .download-button:hover {
+    background-color: transparent;
+    transform: scale(1.05);
+    color: #ede8d0;
+  }
+  

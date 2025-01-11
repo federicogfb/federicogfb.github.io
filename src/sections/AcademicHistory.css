@@ -1,0 +1,181 @@
+.academic-history-section {
+    font-family: "IBM Plex Mono", sans-serif;
+    color: #000000;
+    text-align: center;
+
+  }
+  .academic-history-section h2 {
+    background-color: #fff;
+    margin: 1%;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+    display: inline-block;
+  }
+  
+  .timeline {
+    display: flex;
+    flex-direction: column;
+    width: 50vw ;
+    margin: 1% auto;
+  }
+  
+  .timeline__event {
+    background: #fff; /* Cambia el color del cuadro donde aparece el texto*/
+    margin-bottom: 20px;
+    position: relative;
+    display: flex;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25),
+      0 18px 36px -18px rgba(0, 0, 0, 0.3),
+      0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+  }
+  
+  .timeline__event__title { /* Titulo primer cuadrado */
+    font-size: 1.2rem;
+    line-height: 1.4;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #590016;
+    letter-spacing: 1.5px;
+  }
+  
+  .timeline__event__content { /* Contenido debajo del titulo */
+    padding: 20px;
+    font-family: "IBM Plex Mono";
+    font-weight: 500;
+  }
+  
+  .timeline__event__date { /* Fecha recuadro*/
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: 600;
+    white-space: nowrap;
+    text-shadow: 2px 2px 4px black, 0px 0px 5px white;
+  }
+  
+  .timeline__event__icon { /* Color recuadro izquierdo */
+    border-radius: 8px 0 0 8px;
+    background: url('./images/code2blurred.png') no-repeat center center;
+    background-size: cover; /* Ensures the image covers the entire element */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 40%;
+    font-size: 2rem;
+    color: rgba(89, 0, 22, 0.5); /* Text color */
+    padding: 20px;
+  }
+  
+  .timeline__event__icon i {
+    position: absolute;
+    top: 50%;
+    left: -65px;
+    font-size: 2.5rem;
+    transform: translateY(-50%);
+  }
+  
+  .timeline__event__description {
+    flex-basis: 60%;
+  }
+  
+  .timeline__event:after {
+    content: "";
+    width: 2px; /* Thickness of the line */
+    height: 100%;
+    position: absolute;
+    top: 52%;
+    left: -3.5rem;
+    z-index: -1;
+    border-left: 2px dotted #590016; /* Dashed line */
+    background: none; /* Ensure no solid background overlaps */
+  }
+  
+  .timeline__event:before {
+    content: ""; /* If you don’t want circles or other conflicts, ensure no content is here */
+    width: 5rem; /* Adjust to your needs */
+    height: 5rem;
+    position: absolute;
+    left: -6rem;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    background: #ede8d0;
+    border: 2px solid #560505;
+    z-index: 0; /* Place it behind to prevent overlap */
+  }
+  
+  .timeline__event--type2:before {
+    background: #ede8d0;
+    border: 2px solid #560505;
+
+  }
+  
+  .timeline__event--type2:after {
+    background: none;
+    height: 125%;
+  }
+  
+  .timeline__event--type2 .timeline__event__date {
+    color: #ffffff;
+  }
+  
+  .timeline__event--type2 .timeline__event__icon {
+    background: #590016;
+    color: #590016;
+    background: url('./images/dockerfileblurred.png') no-repeat center center;
+    background-size: cover; /* Ensures the image covers the entire element */
+  }
+  
+  .timeline__event--type2 .timeline__event__title {
+    color: #590016;
+  }
+  
+  .timeline__event--type3:before {
+    background: #ede8d0;
+    border: 2px solid #560505;
+  }
+  
+  .timeline__event--type3:after {
+    background: none;
+    height: 80%;
+  }
+  
+  .timeline__event--type3 .timeline__event__date {
+    color: #ffffff;
+  }
+  
+  .timeline__event--type3 .timeline__event__icon {
+    background: #590016;
+    color: #590016;
+    background: url('./images/devopsblurred.png') no-repeat center center;
+    background-size: cover; /* Ensures the image covers the entire element */
+  }
+  
+  .timeline__event--type3 .timeline__event__title {
+    color: #590016;
+  }
+  
+  .timeline__event.last-event:after {
+    content: none; /* Remove the line for the last event */
+  }
+  
+  .timeline__event.last-event:before {
+    /* Optionally remove or modify the circle for the last event */
+    border-color: 2px solid;
+  }
+
+  .timeline__event.last-event .timeline__event__icon {
+    border-radius: 8px 0 0 8px !important;
+    background: url('./images/uncblurred.png') no-repeat center center;
+    background-size: cover; /* Ensures the image covers the entire element */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 22%;
+    font-size: 2rem;
+    color: rgba(89, 0, 22, 0.5); /* Text color */;
+    padding: 20px !important;
+  }
+  

@@ -1,0 +1,45 @@
+/* src/styles/global.css */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;1,400;1,500&family=IBM+Plex+Sans:ital,wght@1,500&display=swap');
+
+html {
+    scroll-behavior: smooth;
+  }
+  
+
+  body {
+    margin: 0px;
+    padding: 0px;
+    height: 100vh;
+    width: 100vw;
+    background-image: url('../../public/images/background.png');
+    background-repeat: repeat; /* Repeats the image horizontally and vertically */
+    background-size: auto; /* Keeps the image at its original size */
+    background-position: top left; /* Starts from the top-left corner */
+    background-attachment: fixed;
+  }
+
+  .ibm-plex-mono-regular {
+    font-family: "IBM Plex Mono", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .ibm-plex-mono-medium {
+    font-family: "IBM Plex Mono", serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .ibm-plex-mono-regular-italic {
+    font-family: "IBM Plex Mono", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .ibm-plex-mono-medium-italic {
+    font-family: "IBM Plex Mono", serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  
